@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mcp-client
+
+  ai:
+    # --- Groq LLM config (OpenAI-compatible) ---
+    openai:
+      api-key: ${GROQ_API_KEY}
+      base-url: https://api.groq.com/openai
+      chat:
+        options:
+          model: llama-3.3-70b-versatile
+
+    # --- MCP Client config ---
+    mcp:
+      client:
+        enabled: true
+        name: demo-mcp-client
+        version: 1.0.0
+        type: SYNC                          # Match server's SYNC mode
+        request-timeout: 30s
+        toolcallback:
+          enabled: true                     # Auto-register MCP tools into ChatClient
+        sse:
+          connections:
+            demo-mcp-server:                # Any logical name
+              url: http://localhost:8081    # Your MCP Server
