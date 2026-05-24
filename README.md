@@ -208,10 +208,9 @@ Registered Tools
 ---
 
 # Future Improvements
-
+- RAG Search
 - Authentication
 - Multiple MCP tools
-- AI Agent integration
 - Database support
 - Streaming responses
 - External API integrations
@@ -220,4 +219,4 @@ Registered Tools
 
 # Author
 
-Adwitiya
+dotSlash-Adwitiya
