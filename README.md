@@ -123,7 +123,7 @@ mcp-client/
 ## Step 1 — Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
+git clone [<YOUR_GITHUB_REPO_URL>](https://github.com/dotSlash-Adwitiya/Spring-AI-MCP.git)
 ```
 
 ---
